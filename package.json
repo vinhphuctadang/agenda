@@ -1,7 +1,7 @@
 {
-  "name": "agenda",
-  "version": "3.1.0",
-  "description": "Light weight job scheduler for Node.js",
+  "name": "agenda-for-shard",
+  "version": "3.1.1",
+  "description": "Light weight job scheduler for Node.js, support sharded mongo, editted by Vinh Phuc Ta Dang",
   "main": "index.js",
   "files": [
     "lib"
@@ -10,7 +10,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "test": "npm run lint && npm run mocha",
+    "test": "npm run mocha",
     "lint": "xo --verbose",
     "mocha": "mocha --reporter spec --timeout 8000 -b",
     "mocha-debug": "DEBUG=agenda:**,-agenda:internal:** mocha --reporter spec --timeout 8000 -b",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/agenda/agenda"
+    "url": "git://github.com/vinhphuctadang/agenda"
   },
   "keywords": [
     "job",
@@ -39,7 +39,7 @@
   "author": "Ryan Schmukler <ryan@slingingcode.com> (http://slingingcode.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/agenda/agenda/issues"
+    "url": "https://github.com/vinhphuctadang/agenda/issues"
   },
   "dependencies": {
     "cron": "~1.8.0",
